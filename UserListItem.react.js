@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+// Even though this component represents small piece of UI, it has its own
+// state which we don't need to store anywhere outside. `UserListItem` can be
+// in viewing or editing mode. Based on this state, it will just show user
+// data and buttons for Edit and Destroy operations, or input fields that
+// allow you to update data and submit changes to the users collection
+// (using Users API).
 export default class UserListItem extends Component {
   constructor(props) {
     super(props);
